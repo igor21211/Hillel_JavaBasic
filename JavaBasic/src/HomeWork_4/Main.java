@@ -30,6 +30,7 @@ public class Main {
         System.out.println(maxNumber(array));
         System.out.println(sayName());
         System.out.println(sayAge());
+        System.out.println(calculateFactorial(6));
     }
 
     public static String sayName(){
@@ -41,5 +42,14 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextInt();
     }
+    static int calculateFactorial(int n){
+        int result = 1;
+        for (int i = 1; i <=n; i ++){
+            result = result*i;
+        }
+        return result;
+    }
+
+
 
 }
