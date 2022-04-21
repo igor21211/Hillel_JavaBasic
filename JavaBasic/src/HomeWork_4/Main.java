@@ -1,5 +1,7 @@
 package HomeWork_4;
 
+import java.util.Scanner;
+
 public class Main {
     public static int maxNumber(int [] array){
         int max = Integer.MIN_VALUE;
@@ -26,6 +28,12 @@ public class Main {
         int [] array = {3,6,67,98,2,45,7,2};
         System.out.println(minNumber(array));
         System.out.println(maxNumber(array));
+        System.out.println(sayName());
+    }
+
+    public static String sayName(){
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextLine();
     }
 
 }
