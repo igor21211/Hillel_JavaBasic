@@ -1,4 +1,4 @@
-package Hoome_Work__2_3;
+package Home_Work__2_3;
 
 public class Students {
     String name;
