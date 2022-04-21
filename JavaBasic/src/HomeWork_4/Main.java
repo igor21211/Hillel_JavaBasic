@@ -29,11 +29,17 @@ public class Main {
         System.out.println(minNumber(array));
         System.out.println(maxNumber(array));
         System.out.println(sayName());
+        System.out.println(sayAge());
     }
 
     public static String sayName(){
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
+    }
+
+    public static int sayAge(){
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextInt();
     }
 
 }
