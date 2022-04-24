@@ -1,4 +1,4 @@
-package HomeWork_4;
+package JustCodingForEnjoy;
 
 import java.util.Scanner;
 
@@ -25,6 +25,8 @@ public class Main {
 
 
     public static void main(String[] args) {
+
+
         int [] array = {3,6,67,98,2,45,7,2};
         System.out.println(minNumber(array));
         System.out.println(maxNumber(array));
