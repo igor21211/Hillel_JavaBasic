@@ -2,7 +2,7 @@ package HomeWork_8;
 
 import HomeWork_8.Animal;
 
-import java.sql.SQLOutput;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -89,7 +89,7 @@ public class Eat extends Animal {
         int result = 0;
         if (date <= 12) {
             if (number == 1) {
-                result = eatsForCats(getCats(), getPart());
+                result = calculated(date, eatsForCats(getCats(),getPart()));
             } else if (number == 2) {
                 result = calculated(date, eatsForDogs(getDogs(), getPart()));
             } else if (number == 3) {
