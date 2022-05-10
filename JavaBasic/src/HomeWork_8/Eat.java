@@ -1,6 +1,8 @@
-package HomeWork_5;
+package HomeWork_8;
 
-public class Eat  extends Animal{
+import HomeWork_8.Animal;
+
+public class Eat  extends Animal {
 
 
     public int moneyForAll(int Dogs, int Cats , int money){

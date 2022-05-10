@@ -1,4 +1,4 @@
-package HomeWork_5;
+package HomeWork_8;
 
 public class Animal {
 
