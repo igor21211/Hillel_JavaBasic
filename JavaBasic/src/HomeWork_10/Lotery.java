@@ -48,6 +48,8 @@ public class Lotery {
         madeUserArray(arrayUsers);
         lotereyWin(arrayOne, arrayUsers);
 
+
+
     }
 
 
