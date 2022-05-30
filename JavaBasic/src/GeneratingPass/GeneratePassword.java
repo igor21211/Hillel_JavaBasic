@@ -7,7 +7,9 @@ public class GeneratePassword {
     private static final String CHAR_UPPERCASE = CHAR_LOWERCASE.toUpperCase();
     private static final String NUMBER = "0123456789";
     private static final String SYMVOL = "!@#&()â€\"[{}]:;',?/*~$^+=<>";
-    private static final int PASSWORD_LENGTH = 20;
+    private static final int PASSWORD_LENGTH = 8;
+
+
 
     private static final String PASSWORD = CHAR_LOWERCASE + CHAR_UPPERCASE + NUMBER +SYMVOL;
 
