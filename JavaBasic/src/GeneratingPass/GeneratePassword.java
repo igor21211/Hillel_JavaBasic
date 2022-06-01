@@ -7,9 +7,11 @@ public class GeneratePassword {
     private static final String CHAR_UPPERCASE = CHAR_LOWERCASE.toUpperCase();
     private static final String NUMBER = "0123456789";
     private static final String SYMVOL = "!@#&()â€\"[{}]:;',?/*~$^+=<>";
-    private static final int PASSWORD_LENGTH = 8;
+    private static int PASSWORD_LENGTH = 8;
 
-
+    public static void setPasswordLength(int passwordLength) {
+        PASSWORD_LENGTH = passwordLength;
+    }
 
     private static final String PASSWORD = CHAR_LOWERCASE + CHAR_UPPERCASE + NUMBER +SYMVOL;
 
@@ -31,16 +33,16 @@ public class GeneratePassword {
     public static String getPassword(){
         StringBuilder password = new StringBuilder(PASSWORD_LENGTH);
 
-        String strLowercase = generatePass(CHAR_LOWERCASE,3);
+        String strLowercase = generatePass(CHAR_LOWERCASE,PASSWORD_LENGTH/4);
         password.append(strLowercase);
 
-        String strUppercase = generatePass(CHAR_UPPERCASE,3);
+        String strUppercase = generatePass(CHAR_UPPERCASE,PASSWORD_LENGTH/4);
         password.append(strUppercase);
 
-        String strNumber = generatePass(NUMBER,3);
+        String strNumber = generatePass(NUMBER,PASSWORD_LENGTH/4);
         password.append(strNumber);
 
-        String strSymvol = generatePass(SYMVOL,11);
+        String strSymvol = generatePass(SYMVOL,PASSWORD_LENGTH/4);
         password.append(strSymvol);
 
         return password.toString();

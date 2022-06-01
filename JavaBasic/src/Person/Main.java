@@ -8,6 +8,8 @@ public class Main  {
         Generate.generatePerson(person,100);
         System.out.println(person.toString());
 
+
+
     }
 
 }
