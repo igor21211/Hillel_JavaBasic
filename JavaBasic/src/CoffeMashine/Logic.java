@@ -97,7 +97,9 @@ public static void logic(int chek, ArrayList order){
 
     @Override
     public void breewCoffee() {
-        Coffie.super.breewCoffee();
+        breewAmericano();
+        breewKapuchino();
+        breewTea();
     }
 
     public static void breewAmericano(){
